@@ -12385,6 +12385,9 @@ E9999
 $1 'CUSTOMER RESERVED'
 %
 %@3
+ N00001: RD         X10.0   ;(DCC.M   )   "DOOR CLOSE CONFIRM"
+         AND        X10.1   ;(FCH.M   )   "MAIN-CHUCK CL/UNCLAMP FOOT SW"
+         WRT        R5800.0 
  N00002: RD.NOT     X4.2    ;(+MT1.M  )   "MAN. TOOL OFFSET COMP. +X"
          AND.NOT    X4.3    ;(-MT1.M  )   "MAN. TOOL OFFSET COMP. -X"
          AND.NOT    X4.4    ;(+MT2.M  )   "MAN. TOOL OFFSET COMP. +Z"
